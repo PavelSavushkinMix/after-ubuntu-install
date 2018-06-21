@@ -25,6 +25,11 @@ if [ ! -d "${PATH_TO_PACKAGES_FOLDER}" ]; then
     exit 1;
 fi
 
+# Check if downloads folder exists and create it is not
+if [ ! -d "${DOWNLOADS_FOLDER}" ]; then
+    mkdir "${DOWNLOADS_FOLDER}"
+fi
+
 # Number of successful installations
 SUCCESSFUL_PACKAGES=0
 
