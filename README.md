@@ -17,4 +17,4 @@ cp .env.example .env
 You should start a script with root privileges because of packaging tool work.
 The installation sctipt validates environment variables, updates the repositories and install the packages.
 
-If you need some repositories, just create a *repo.sh* file in a root of package folder. The file should contain only management of /etc/apt/source.list[.d/*] file(s).
+If you need some repositories, just create a *repo.sh* file in a root of package folder. The file could contain management of /etc/apt/source.list[.d/*] file(s) and/or install required lib(s).

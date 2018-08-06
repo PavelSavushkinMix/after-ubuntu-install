@@ -1,7 +1,7 @@
 # Check root previleges
-if [ "$EUID" -ne 0 ]
-  then echo "Please, run as root."
-  exit 1;
+if [ "$EUID" -ne 0 ]; then
+    sudo echo "Root password is cached.";
+    exit 1;
 fi
 
 # Read an variable with array of packages which should be installed.
@@ -18,7 +18,7 @@ fi
 
 # Check if downloads folder exists and create it is not
 if [ ! -d "${DOWNLOADS_FOLDER}" ]; then
-    mkdir "${DOWNLOADS_FOLDER}"
+    makeDir "${DOWNLOADS_FOLDER}"
 fi
 
 # Number of tries instllation of packaging tool

@@ -14,6 +14,8 @@ source "${PATH_TO_CORE_FOLDER}/functions.sh"
 # Validate the entry data
 source "${PATH_TO_CORE_FOLDER}/entryValidation.sh"
 
+exit;
+
 # Base updating repositories
 update
 # Base upgrading of the system
