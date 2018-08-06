@@ -15,9 +15,9 @@ source "${PATH_TO_CORE_FOLDER}/functions.sh"
 source "${PATH_TO_CORE_FOLDER}/entryValidation.sh"
 
 # Base updating repositories
-eval ${PACKAGING_TOOL} update
+update
 # Base upgrading of the system
-eval ${PACKAGING_TOOL} upgrade -y
+upgrade
 
 # Collect and update all repositories before update them with packaging tool
 source "${PATH_TO_CORE_FOLDER}/updateRepositories.sh"

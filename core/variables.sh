@@ -4,3 +4,5 @@
 export SUCCESSFUL_PACKAGES=0
 # Number of failed installations
 export FAILED_PACKAGES=0
+# Arch version
+export ARCH=$(dpkg --print-architecture)
