@@ -1,3 +1,3 @@
 #!/bin/bash
 
-install jq
+install wget jq
