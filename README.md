@@ -4,6 +4,8 @@
 
 The scripts allows you to install applications after fresh installation of Debian-based system (tested on Ubuntu 16.04).
 
+Tested: Ubuntu 16.04.5 LTS (amd64)
+
 ### Usage
 
 1. Create a configuration file:
