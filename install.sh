@@ -23,7 +23,7 @@ upgrade
 source "${PATH_TO_CORE_FOLDER}/updateRepositories.sh"
 
 # Update the packages after adding new repositories
-eval ${PACKAGING_TOOL} update
+update
 
 # Install packages
 source "${PATH_TO_CORE_FOLDER}/packagesInstallation.sh"
