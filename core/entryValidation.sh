@@ -1,7 +1,6 @@
 # Check root previleges
 if [ "$EUID" -ne 0 ]; then
     sudo echo "Root password is cached.";
-    exit 1;
 fi
 
 # Read an variable with array of packages which should be installed.
