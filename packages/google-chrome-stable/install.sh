@@ -1,3 +1,3 @@
 #!/bin/bash
 
-isntall google-chrome-stable
+install google-chrome-stable
