@@ -28,9 +28,6 @@ update
 # Install packages
 source "${PATH_TO_CORE_FOLDER}/packagesInstallation.sh"
 
-# Start own scripts
-source "${PATH_TO_PACKAGES_FOLDER}/own/${INSTALLATION_FILENAME}"
-
 # Write extra data of installation process
 echo "---"
 echo "Installation is done."
