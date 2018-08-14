@@ -31,5 +31,3 @@ source "${PATH_TO_CORE_FOLDER}/packagesInstallation.sh"
 # Write extra data of installation process
 echo "---"
 echo "Installation is done."
-printf "Installed: %d\n" $SUCCESSFUL_PACKAGES
-printf "Failed: %d\n" $FAILED_PACKAGES
