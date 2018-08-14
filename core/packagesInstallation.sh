@@ -7,7 +7,6 @@ do
     # Check if folder of package does exist
     if [ ! -d "${PATH_TO_PACKAGES_FOLDER}/${package}" ]; then
         printf "Scripts for \"%s\" not found. Abort.\n\n" $package
-        ((FAILED_PACKAGES++))
         continue;
     fi
 
@@ -19,5 +18,4 @@ do
     # Run main file installation of package
     source "${PATH_TO_PACKAGES_FOLDER}/${package}/${INSTALLATION_FILENAME}"
     printf "Installed: %s\n\n" $package
-    ((SUCCESSFUL_PACKAGES++))
 done

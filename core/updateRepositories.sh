@@ -4,9 +4,10 @@
 for package in ${PACKAGES_TO_INSTALL[*]}
 do
     # Check if package folder and repo.sh file do exist
-    if [[ ! -d "${PATH_TO_PACKAGES_FOLDER}/${package}" && ! -f "${PATH_TO_PACKAGES_FOLDER}/${package}/${REPO_FILENAME}" ]]; then
+    if [ ! -d "${PATH_TO_PACKAGES_FOLDER}/own" ] || [ ! -f "${PATH_TO_PACKAGES_FOLDER}/own/${REPO_FILENAME}" ]; then
         continue;
     fi
+
     # Run repository file
     source "${PATH_TO_PACKAGES_FOLDER}/${package}/${REPO_FILENAME}"
     printf "Added repository for \"%s\"\n\n" $package
