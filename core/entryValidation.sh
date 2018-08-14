@@ -15,9 +15,14 @@ if [ ! -d "${PATH_TO_PACKAGES_FOLDER}" ]; then
     exit 1;
 fi
 
-# Check if downloads folder exists and create it is not
+# Check if downloads folder exists and create it if not
 if [ ! -d "${DOWNLOADS_FOLDER}" ]; then
     makeDir "${DOWNLOADS_FOLDER}"
+fi
+
+# Check if programs folder exists and create it if not
+if [ ! -d "${PROGRAMS_FOLDER}" ]; then
+    makeDir "${PROGRAMS_FOLDER}"
 fi
 
 # Number of tries instllation of packaging tool
